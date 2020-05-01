@@ -8,7 +8,6 @@ body {
   width: 250px;
   margin: auto;
   overflow: visible;
-  border: dashed thin green;
 }
   
 .smBody, .smHead, .smFeet {
@@ -25,6 +24,65 @@ body {
   bottom: -60px;
   z-index: 10;
 }
+  
+  .face {
+    margin: 40px auto;
+    height: 30px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .eye, .nose, .mouth{
+    border: thin #000 solid;
+    width: 20px;
+    height: 15px;
+    background-color: black;
+    border-radius: 45%;
+  }
+  
+  .leye {
+    float: left;
+  }
+  
+  .reye {
+    float: right:
+  }
+  
+  .nose, .mouth {
+    clear: both;        //Clear floats of left and right to center the eyes
+    margin: auto;       //Center up according to other styles for the eyes
+  }
+  
+  .nose {
+    margin-top: 20px;
+    height: 30px;
+  }
+  
+  .mouth {
+    margin-top: 10px;
+    width: 50px;
+  }
+
+  .hat{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    position: absolute;
+    top: -70px;
+    left: 20px;         
+  }
+
+  .rim {
+     background-color: black;
+     width: 120px;
+     height: 30px;
+     border-radius: 50%;
+     position: absolute;
+     top: 70px;
+     left: -20px;          
+  }   /* To keep the hat on top of the Snowman's head */
 
 .smBody {
   width: 125px;           //width: 70%;
